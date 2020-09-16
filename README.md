@@ -10,6 +10,7 @@
 [1436. Destination City](string/1436.cpp)
 [1309. Decrypt String from Alphabet to Integer Mapping](string/1309.cpp)
 [824. Goat Latin](string/824.cpp)
+[1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence](string/1455.cpp)
 ## Bit Manipulation
 [1342. Number of Steps to Reduce a Number to Zero](bit/1342.cpp)
 ## Hash Table
