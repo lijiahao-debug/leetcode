@@ -12,9 +12,10 @@
 [824. Goat Latin](string/824.cpp)  
 [1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence](string/1455.cpp)  
 [1408. String Matching in an Array](string/1408.cpp)  
-[1332. Remove Palindromic Subsequences](string/1332.cpp)
+[1332. Remove Palindromic Subsequences](string/1332.cpp)  
+[917. Reverse Only Letters](string/917.cpp)  
 [KMP](string/kmp.cpp)  
 ## Bit Manipulation
-[1342. Number of Steps to Reduce a Number to Zero](bit/1342.cpp)
+[1342. Number of Steps to Reduce a Number to Zero](bit/1342.cpp)  
 ## Hash Table
-[771. Jewels and Stones](hash/771.cpp)
+[771. Jewels and Stones](hash/771.cpp)  
