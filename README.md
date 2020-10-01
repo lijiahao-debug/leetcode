@@ -14,6 +14,7 @@
 [1408. String Matching in an Array](string/1408.cpp)  
 [1332. Remove Palindromic Subsequences](string/1332.cpp)  
 [917. Reverse Only Letters](string/917.cpp)  
+[521. Longest Uncommon Subsequence I](string/521.cpp)  
 [KMP](string/kmp.cpp)  
 ## Bit Manipulation
 [1342. Number of Steps to Reduce a Number to Zero](bit/1342.cpp)  
