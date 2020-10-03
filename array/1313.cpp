@@ -18,23 +18,23 @@ Output: [1,3,3]
 #include <vector>
 using namespace std;
 
-void printVector(vector<int>& v);
+void printVector(vector<int> &v);
 
-class Solution{
+class Solution {
 public:
-    vector<int> decompressRLElist(vector<int>& nums) {
+    vector<int> decompressRLElist(vector<int> &nums) {
         vector<int> result;
-        for(int i = 0; i < nums.size(); i += 2){
-            for(int j = 0; j < nums[i]; j++){
-                result.push_back(nums[i+1]);
+        for (int i = 0; i < nums.size(); i += 2) {
+            for (int j = 0; j < nums[i]; j++) {
+                result.push_back(nums[i + 1]);
             }
         }
         return result;
-    }   
+    }
 };
 
-int main(){
-    vector<int> v = {1,2,3,4};
+int main() {
+    vector<int> v = {1, 2, 3, 4};
     printVector(v);
     Solution s;
     vector<int> result = s.decompressRLElist(v);
@@ -42,8 +42,8 @@ int main(){
     return 0;
 }
 
-void printVector(vector<int>& v){
-    for(auto a : v)
+void printVector(vector<int> &v) {
+    for (auto a : v)
         cout << a << " ";
     cout << endl;
 }

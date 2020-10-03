@@ -10,15 +10,14 @@ Output: [true,true,true,false,true]
 Input: candies = [4,2,1,1,2], extraCandies = 1
 Output: [true,false,false,false,false] 
 */
-#include <vector>
 #include <iostream>
+#include <vector>
 using namespace std;
 #include <algorithm>
 
-
 class Solution {
 public:
-    vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
+    vector<bool> kidsWithCandies(vector<int> &candies, int extraCandies) {
         vector<bool> result;
         result.reserve(candies.size());
 
@@ -31,27 +30,27 @@ public:
         int max = *max_element(candies.begin(), candies.end());
         // cout << "max " << max << endl;
 
-        for(int i = 0; i < candies.size(); i++){
-            if((max - candies[i]) <= extraCandies){
+        for (int i = 0; i < candies.size(); i++) {
+            if ((max - candies[i]) <= extraCandies) {
                 result.push_back(true);
-            }else{
+            } else {
                 result.push_back(false);
-            }       
+            }
         }
 
         return result;
     }
 };
-template<typename T>
-void printVector(vector<T> & v){
-    for(int i = 0; i < v.size(); i++){
-        cout << v[i] << " "; 
+template <typename T>
+void printVector(vector<T> &v) {
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
     }
     cout << endl;
 }
 
-int main(){
-    vector<int> candies = {2,3,5,1,3};
+int main() {
+    vector<int> candies = {2, 3, 5, 1, 3};
     printVector(candies);
     Solution s;
     int extraCandies = 0;
@@ -61,4 +60,3 @@ int main(){
     printVector(result);
     return 0;
 }
-

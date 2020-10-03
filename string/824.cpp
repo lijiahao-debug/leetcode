@@ -16,9 +16,9 @@ For example, the first word gets "a" added to the end, the second word gets "aa"
 Return the final sentence representing the conversion from S to Goat Latin. 
 */
 
-#include<iostream>
-#include<string>
-#include<vector>
+#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -26,30 +26,29 @@ class Solution {
 public:
     string toGoatLatin(string S) {
         string result = "";
-        
+
         int len = S.size();
         vector<string> v;
         int flag = 0;
-        for(int i = 0; i < len; i++){
-            if(S[i] == ' '){
-                v.push_back(S.substr(flag, i-flag));
+        for (int i = 0; i < len; i++) {
+            if (S[i] == ' ') {
+                v.push_back(S.substr(flag, i - flag));
                 flag = i + 1;
             }
         }
         v.push_back(S.substr(flag));
         string temp = "";
-        
-        for(int i = 0; i < v.size(); i++){
+
+        for (int i = 0; i < v.size(); i++) {
             temp = v[i];
-            if(temp[0] == 'a' || temp[0] == 'e' || temp[0] == 'i' || temp[0] == 'o' || temp[0] == 'u'
-            || temp[0] == 'A' || temp[0] == 'E' || temp[0] == 'I' || temp[0] == 'O' || temp[0] == 'U'){
+            if (temp[0] == 'a' || temp[0] == 'e' || temp[0] == 'i' || temp[0] == 'o' || temp[0] == 'u' || temp[0] == 'A' || temp[0] == 'E' || temp[0] == 'I' || temp[0] == 'O' || temp[0] == 'U') {
                 result += temp;
-            }else{
+            } else {
                 result.append(temp.substr(1));
                 result += temp[0];
             }
             result += "ma";
-            for(int j = 0; j < i+1; j++){
+            for (int j = 0; j < i + 1; j++) {
                 result += 'a';
             }
             result += ' ';
@@ -59,7 +58,7 @@ public:
     }
 };
 
-int main(){
+int main() {
     string s;
     Solution sol;
 

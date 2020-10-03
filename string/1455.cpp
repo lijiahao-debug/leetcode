@@ -9,12 +9,12 @@ If searchWord is a prefix of more than one word, return the index of the first w
 
 A prefix of a string S is any leading contiguous substring of S.
 */
-#include<iostream>
-#include<string>
-#include<vector>
+#include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
 
-class Solution{
+class Solution {
 public:
     int isPrefixOfWord(string sentence, string searchWord) {
         int ret = 1;
@@ -23,23 +23,23 @@ public:
         vector<string> v;
         int index = 0;
         string temp = "";
-        for(int i = 0; i < len; i++){
-            if(sentence[i] == ' '){
+        for (int i = 0; i < len; i++) {
+            if (sentence[i] == ' ') {
                 temp = sentence.substr(index, i - index);
-                if(searchWord == temp.substr(0, len2)){
+                if (searchWord == temp.substr(0, len2)) {
                     return ret;
                 }
                 index = i + 1;
-                ret ++;
+                ret++;
             }
         }
-        if(searchWord == sentence.substr(index, len2))
+        if (searchWord == sentence.substr(index, len2))
             return ret;
         return -1;
-    }    
+    }
 };
 
-int main(){
+int main() {
     Solution sol;
     string sentence;
     string searchWord;
@@ -47,6 +47,6 @@ int main(){
     searchWord = "you";
     cout << sol.isPrefixOfWord(sentence, searchWord) << endl;
     sentence = "i love eating burger";
-    searchWord = "burg";    
+    searchWord = "burg";
     cout << sol.isPrefixOfWord(sentence, searchWord) << endl;
 }

@@ -30,31 +30,31 @@ using namespace std;
 
 class Solution {
 public:
-    int numberOfSteps (int num) {
+    int numberOfSteps(int num) {
         int count = 0;
-        while(num != 0){
-            if(num % 2 == 0){
+        while (num != 0) {
+            if (num % 2 == 0) {
                 num /= 2;
-            }else{
+            } else {
                 num -= 1;
             }
-            count ++;
+            count++;
         }
         return count;
     }
-    int numberOfSteps2 (int num) {
+    int numberOfSteps2(int num) {
         int count = 0;
-        while(num != 0){
-            if(num % 2 != 0)
-                count ++;
-            count ++;
+        while (num != 0) {
+            if (num % 2 != 0)
+                count++;
+            count++;
             num >>= 1;
         }
         return count - 1;
     }
 };
 
-int main(){
+int main() {
     Solution s;
     cout << s.numberOfSteps2(14) << endl;
     cout << s.numberOfSteps2(8) << endl;

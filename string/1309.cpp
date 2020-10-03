@@ -34,22 +34,22 @@ Output: "abcdefghijklmnopqrstuvwxyz"
 
 using namespace std;
 
-class Solution{
+class Solution {
 public:
     string freqAlphabets(string s) {
         string result = "";
 
         int len = s.size();
-        for(int i = 0; i < len; i++){
-            if(s[i] == '#'){
+        for (int i = 0; i < len; i++) {
+            if (s[i] == '#') {
                 result.pop_back();
                 result.pop_back();
 
                 int temp = stoi(s.substr(i - 2, 2));
                 result.push_back('a' + temp - 1);
-            }else{
-                int temp = s[i]-48;
-                result.push_back('a'+temp-1);
+            } else {
+                int temp = s[i] - 48;
+                result.push_back('a' + temp - 1);
             }
         }
 
@@ -59,13 +59,13 @@ public:
         string result = "";
 
         int len = s.size();
-        for(int i = 0; i < len; i++){
-            if(i+2 < len && s[i+2] == '#'){
+        for (int i = 0; i < len; i++) {
+            if (i + 2 < len && s[i + 2] == '#') {
                 int temp = stoi(s.substr(i, 2));
-                result += 'a' + temp - 1; 
+                result += 'a' + temp - 1;
                 i += 2;
-            }else{
-                result += s[i] - 49 + 'a'; 
+            } else {
+                result += s[i] - 49 + 'a';
             }
         }
 
@@ -73,16 +73,16 @@ public:
     }
 };
 
-int main(){
+int main() {
 
     Solution sol;
     string s;
     string result;
     s = "10#11#12";
-    result  = sol.freqAlphabets1(s);
+    result = sol.freqAlphabets1(s);
     cout << result << endl;
     s = "1326#";
-    result  = sol.freqAlphabets1(s);
+    result = sol.freqAlphabets1(s);
     cout << result << endl;
     s = "25#";
     result = sol.freqAlphabets1(s);

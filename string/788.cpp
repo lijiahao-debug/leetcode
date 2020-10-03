@@ -3,17 +3,17 @@
 
 using namespace std;
 
-class Solution{
+class Solution {
 public:
     int rotatedDigits(int N) {
         int ret = 0;
         int i = 0;
         string temp = "";
         int len = 0;
-        while(i <= N){
+        while (i <= N) {
             temp = to_string(i);
             len = temp.length();
-            if(temp.find('3') >= len && temp.find('4') >= len && temp.find('7') >= len && (temp.find('2') < len || temp.find('5') <= len || temp.find('6') < len || temp.find('9') < len))
+            if (temp.find('3') >= len && temp.find('4') >= len && temp.find('7') >= len && (temp.find('2') < len || temp.find('5') <= len || temp.find('6') < len || temp.find('9') < len))
                 ret++;
             i++;
         }
@@ -23,7 +23,7 @@ public:
     //TODO: 不转换为字符串
 };
 
-int main(){
+int main() {
     Solution s;
     cout << s.rotatedDigits(20) << endl;
 

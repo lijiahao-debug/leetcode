@@ -21,19 +21,19 @@ Output: [0,0,0,0]
 using namespace std;
 
 template <typename T>
-void printVector(vector<T> & v);
+void printVector(vector<T> &v);
 
-class Solution{
+class Solution {
 public:
-    vector<int> smallerNumbersThanCurrent(vector<int> & nums){
+    vector<int> smallerNumbersThanCurrent(vector<int> &nums) {
         vector<int> result;
         result.reserve(nums.size());
 
-        for(int i = 0; i < nums.size(); i++){
+        for (int i = 0; i < nums.size(); i++) {
             int count = 0;
-            for(int j = 0; j < nums.size(); j++){
-                if(nums[i] > nums[j])
-                    count ++;
+            for (int j = 0; j < nums.size(); j++) {
+                if (nums[i] > nums[j])
+                    count++;
             }
             result.push_back(count);
         }
@@ -41,7 +41,7 @@ public:
     }
 };
 
-int main(){
+int main() {
     vector<int> v = {8, 1, 2, 2, 3};
     printVector(v);
     Solution s;
@@ -51,9 +51,8 @@ int main(){
 }
 
 template <typename T>
-void printVector(vector<T> &v){
-    for(auto it : v)
+void printVector(vector<T> &v) {
+    for (auto it : v)
         cout << it << " ";
     cout << endl;
 }
-

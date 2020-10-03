@@ -4,15 +4,13 @@
 
 using namespace std;
 
-class KMP
-{
+class KMP {
 public:
     vector<int> getPrefixTable(string &pattern);
     int search(string &text, string &pattern);
 };
 
-int main()
-{
+int main() {
     KMP kmp;
     string s;
     // s = "ABABC";
@@ -25,14 +23,12 @@ int main()
     return 0;
 }
 
-vector<int> KMP::getPrefixTable(string &pattern)
-{
+vector<int> KMP::getPrefixTable(string &pattern) {
     int len = pattern.length();
     vector<int> prefix_table(len);
     prefix_table[0] = 0;
     int i = 1;
-    while (i < pattern.length())
-    {
+    while (i < pattern.length()) {
         if (pattern[i] == pattern[prefix_table[i - 1]])
             prefix_table[i] = prefix_table[i - 1] + 1;
         else
@@ -40,8 +36,7 @@ vector<int> KMP::getPrefixTable(string &pattern)
         i++;
     }
     i = len - 1;
-    while (i > 0)
-    {
+    while (i > 0) {
         prefix_table[i] = prefix_table[i - 1];
         i--;
     }
@@ -49,15 +44,13 @@ vector<int> KMP::getPrefixTable(string &pattern)
     return prefix_table;
 }
 
-int KMP::search(string &text, string &pattern)
-{
+int KMP::search(string &text, string &pattern) {
     if (text.length() < pattern.length())
         return -1;
 
     vector<int> prefix_table = KMP::getPrefixTable(pattern);
     int i;
-    for (i = 0; i < prefix_table.size(); i++)
-    {
+    for (i = 0; i < prefix_table.size(); i++) {
         cout << prefix_table[i] << " ";
     }
     cout << endl;
@@ -65,19 +58,16 @@ int KMP::search(string &text, string &pattern)
     i = 0;
     int j = 0;
 
-    while (i < text.length())
-    {
+    while (i < text.length()) {
         if (text[i] == pattern[j] && j == pattern.length() - 1)
             return i - j;
 
-        if(text[i] == pattern[j])
-        {
+        if (text[i] == pattern[j]) {
             i++;
             j++;
-        }else
-        {
+        } else {
             j = prefix_table[j];
-            if(j == -1){
+            if (j == -1) {
                 i++;
                 j++;
             }

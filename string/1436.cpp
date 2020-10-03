@@ -4,32 +4,31 @@ using namespace std;
 
 class Solution {
 public:
-    string destCity(vector<vector<string>>& paths) {
-        if(paths.empty())
+    string destCity(vector<vector<string>> &paths) {
+        if (paths.empty())
             return NULL;
-        if(paths.size() == 1)
+        if (paths.size() == 1)
             return paths[0][1];
 
-        for(int i = 0; i < paths.size(); i++){
+        for (int i = 0; i < paths.size(); i++) {
             bool flag = false;
             string temp = paths[i][1];
-            for(int j = 0; j < paths.size(); j++){
-                if( j != i){
-                    if(temp == paths[j][0]){
+            for (int j = 0; j < paths.size(); j++) {
+                if (j != i) {
+                    if (temp == paths[j][0]) {
                         flag = true;
                         break;
                     }
                 }
             }
-            if(flag == false)
+            if (flag == false)
                 return temp;
         }
         return NULL;
     }
 };
 
-
-int main(){
+int main() {
     Solution s;
 
     vector<vector<string>> v;
@@ -48,10 +47,9 @@ int main(){
     v.push_back(v1);
     v.push_back(v2);
     v.push_back(v3);
-    
+
     string result = s.destCity(v);
     cout << result << endl;
 
     return 0;
-
 }

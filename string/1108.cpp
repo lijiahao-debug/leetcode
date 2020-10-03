@@ -13,50 +13,41 @@ Input: address = "255.100.50.0"
 Output: "255[.]100[.]50[.]0"
 */
 #include <iostream>
-#include <string>
-#include <vector>
 #include <iterator>
 #include <regex>
+#include <string>
+#include <vector>
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    string defangIPaddr1(string address)
-    {
+    string defangIPaddr1(string address) {
         regex dot_re("\\.");
         vector<string> v(sregex_token_iterator(address.begin(), address.end(), dot_re, -1), sregex_token_iterator());
 
         string result;
-        for (auto &&s : v)
-        {
+        for (auto &&s : v) {
             result.append(s).append("[.]");
             // cout << s << "\n";
         }
         result.erase(result.size() - 3, 3);
         return result;
     }
-    string defangIPaddr2(string address)
-    {
-        for (int i = 0; i < address.size(); i++)
-        {
-            if (address[i] == '.')
-            {
+    string defangIPaddr2(string address) {
+        for (int i = 0; i < address.size(); i++) {
+            if (address[i] == '.') {
                 address.replace(i, 1, "[.]");
                 i++;
             }
         }
         return address;
     }
-    string defangIPaddr3(string address)
-    {
+    string defangIPaddr3(string address) {
         string temp = "";
         int x = 0;
-        for (int i = 0; i < address.size(); i++)
-        {
-            if (address[i] == '.')
-            {
+        for (int i = 0; i < address.size(); i++) {
+            if (address[i] == '.') {
                 temp += address.substr(x, i - x) + "[.]";
                 x = i + 1;
             }
@@ -66,8 +57,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Solution s;
     string s1 = s.defangIPaddr3("255.100.50.0");
     cout << s1 << endl;
