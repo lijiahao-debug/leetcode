@@ -16,7 +16,8 @@
 [917. Reverse Only Letters](string/917.cpp)  
 [521. Longest Uncommon Subsequence I](string/521.cpp)  
 [788. Rotated Digits](string/788.cpp)  
-[696. Count Binary Substrings](string/696.cpp)  
+[696. Count Binary Substrings](string/696.cpp) 
+[13. Roman to Integer](string/13.cpp)  
 [KMP](string/kmp.cpp)  
 ## Bit Manipulation
 [1342. Number of Steps to Reduce a Number to Zero](bit/1342.cpp)  
