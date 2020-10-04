@@ -13,6 +13,7 @@
 [788. Rotated Digits](string/788.cpp)  
 [824. Goat Latin](string/824.cpp)  
 [917. Reverse Only Letters](string/917.cpp)  
+[937. Reorder Data in Log Files](string/937.cpp)  
 [1108. Defanging an IP Address](string/1108.cpp)  
 [1332. Remove Palindromic Subsequences](string/1332.cpp)  
 [1309. Decrypt String from Alphabet to Integer Mapping](string/1309.cpp)  
