@@ -8,6 +8,7 @@
 ## String
 [12. Integer to Roman](string/12.cpp)  
 [13. Roman to Integer](string/13.cpp)  
+[520. Detect Capital](string/520.cpp)  
 [521. Longest Uncommon Subsequence I](string/521.cpp)  
 [696. Count Binary Substrings](string/696.cpp) 
 [788. Rotated Digits](string/788.cpp)  
