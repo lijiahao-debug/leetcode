@@ -8,6 +8,7 @@
 ## String
 [12. Integer to Roman](string/12.cpp)  
 [13. Roman to Integer](string/13.cpp)  
+[383. Ransom Note](string/383.cpp)  
 [387. First Unique Character in a String](string/387.cpp)
 [520. Detect Capital](string/520.cpp)  
 [521. Longest Uncommon Subsequence I](string/521.cpp)  
