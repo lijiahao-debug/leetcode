@@ -8,6 +8,7 @@
 ## String
 [12. Integer to Roman](string/12.cpp)  
 [13. Roman to Integer](string/13.cpp)  
+[67. Add Binary](string/67.cpp)  
 [383. Ransom Note](string/383.cpp)  
 [387. First Unique Character in a String](string/387.cpp)  
 [415. Add Strings](string/415.cpp)  
