@@ -8,6 +8,7 @@
 ## String
 [12. Integer to Roman](string/12.cpp)  
 [13. Roman to Integer](string/13.cpp)  
+[14. Longest Common Prefix](string/14.cpp)  
 [67. Add Binary](string/67.cpp)  
 [125. Valid Palindrome](string/125.cpp)  
 [345. Reverse Vowels of a String](string/345.cpp)  
