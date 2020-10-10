@@ -20,6 +20,7 @@
 [521. Longest Uncommon Subsequence I](string/521.cpp)  
 [541. Reverse String II](string/541.cpp)  
 [551. Student Attendance Record I](string/551.cpp)  
+[680. Valid Palindrome II](string/680.cpp)  
 [696. Count Binary Substrings](string/696.cpp) 
 [788. Rotated Digits](string/788.cpp) 
 [819. Most Common Word](string/819.cpp)   
