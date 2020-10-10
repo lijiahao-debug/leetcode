@@ -23,6 +23,7 @@
 [819. Most Common Word](string/819.cpp)   
 [824. Goat Latin](string/824.cpp)  
 [917. Reverse Only Letters](string/917.cpp)  
+[925. Long Pressed Name](string/925.cpp)  
 [937. Reorder Data in Log Files](string/937.cpp)  
 [1108. Defanging an IP Address](string/1108.cpp)  
 [1332. Remove Palindromic Subsequences](string/1332.cpp)  
