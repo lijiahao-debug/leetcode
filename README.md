@@ -13,6 +13,7 @@
 [383. Ransom Note](string/383.cpp)  
 [387. First Unique Character in a String](string/387.cpp)  
 [415. Add Strings](string/415.cpp)  
+[459. Repeated Substring Pattern](string/459.cpp)  
 [520. Detect Capital](string/520.cpp)  
 [521. Longest Uncommon Subsequence I](string/521.cpp)  
 [541. Reverse String II](string/541.cpp)  
