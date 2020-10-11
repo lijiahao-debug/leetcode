@@ -10,6 +10,7 @@
 [13. Roman to Integer](string/13.cpp)  
 [14. Longest Common Prefix](string/14.cpp)  
 [28. Implement strStr()](string/28.cpp)    
+[38. Count and Say](string/38.cpp)  
 [58. Length of Last Word](string/58.cpp)    
 [67. Add Binary](string/67.cpp)  
 [125. Valid Palindrome](string/125.cpp)  
