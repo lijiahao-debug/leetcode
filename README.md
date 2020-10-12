@@ -30,6 +30,7 @@
 [819. Most Common Word](string/819.cpp)   
 [824. Goat Latin](string/824.cpp)  
 [859. Buddy Strings](string/859.cpp)  
+[890. Find and Replace Pattern](string/890.cpp)  
 [917. Reverse Only Letters](string/917.cpp)  
 [925. Long Pressed Name](string/925.cpp)  
 [937. Reorder Data in Log Files](string/937.cpp)  
