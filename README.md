@@ -9,6 +9,8 @@
 [12. Integer to Roman](string/12.cpp)  
 [13. Roman to Integer](string/13.cpp)  
 [14. Longest Common Prefix](string/14.cpp)  
+[20. Valid Parentheses](string/20.cpp)  
+[22. Generate Parentheses](string/22.cpp)  
 [28. Implement strStr()](string/28.cpp)    
 [38. Count and Say](string/38.cpp)  
 [58. Length of Last Word](string/58.cpp)    
