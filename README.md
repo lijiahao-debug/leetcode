@@ -33,6 +33,7 @@
 [791. Custom Sort String](string/791.cpp)  
 [819. Most Common Word](string/819.cpp)   
 [824. Goat Latin](string/824.cpp)  
+[856. Score of Parentheses](string/856.cpp)  
 [859. Buddy Strings](string/859.cpp)  
 [890. Find and Replace Pattern](string/890.cpp)  
 [917. Reverse Only Letters](string/917.cpp)  
