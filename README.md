@@ -27,6 +27,7 @@
 [537. Complex Number Multiplication](string/537.cpp)  
 [541. Reverse String II](string/541.cpp)  
 [551. Student Attendance Record I](string/551.cpp)  
+[647. Palindromic Substrings](string/647.cpp)  
 [680. Valid Palindrome II](string/680.cpp)  
 [696. Count Binary Substrings](string/696.cpp) 
 [788. Rotated Digits](string/788.cpp)  
