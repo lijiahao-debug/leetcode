@@ -55,4 +55,5 @@
 ## Bit Manipulation
 [1342. Number of Steps to Reduce a Number to Zero](bit/1342.cpp)  
 ## Hash Table
+[1. Two Sum](hash/1.cpp)  
 [771. Jewels and Stones](hash/771.cpp)  
